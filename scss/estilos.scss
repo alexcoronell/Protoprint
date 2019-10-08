@@ -1,0 +1,903 @@
+//------------------------------
+//   PATRON DE COLORES
+//------------------------------
+$texto:#818084;
+$principal:#0095d5;
+$secundario:#d59000;
+html {
+    font-size: 15px;
+}
+
+body {
+    color: $texto;
+}
+
+.bienvenidos {
+    display: flex;
+    flex-direction: column;
+    //height: 90Vh;
+}
+
+.encabezado {
+    background: $principal;
+    color: white;
+    padding: .5rem 0;
+}
+
+.encabezado .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo img {
+    width: 106px;
+    height: 60px;
+}
+
+/** Estilos botones **/
+
+.boton-buscar,
+.boton-menu {
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 .5rem;
+    background: transparent;
+    color: #fff;
+}
+
+.boton-buscar:focus,
+.boton-menu:focus {
+    outline: 0;
+}
+
+.boton-buscar {
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+#bloque-buscar {
+    flex: 1 1 100%;
+}
+
+.contenedor-bloque-buscar {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.contenedor-bloque-buscar input[type="text"] {
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+}
+
+.contenedor-bloque-buscar input[type="submit"] {
+    flex: 1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: $texto;
+    color: #fff;
+}
+
+#menu-principal {
+    flex: 1 1 100%;
+}
+
+#menu-principal ul {
+    padding: 0;
+    list-style: none;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul a {
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 1px solid #fff;
+    text-decoration: none;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+    background: $texto;
+    color: #fff;
+}
+
+#carouselExampleIndicators {
+    padding-top: 4.5rem;
+}
+
+#carouselExampleIndicators h3 {
+    font-size: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    text-shadow: 1px 1px 5px #818084;
+    margin: auto;
+}
+
+/** SECCION CENTRO DE COPIADO **/
+
+.centrodecopiado img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.centrodecopiado {
+    background: $principal;
+    color: #fff;
+}
+
+.boton-quienes-somos {
+    display: flex;
+    justify-content: center;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.boton-quienes-somos a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/** SECCION CATALOGO **/
+
+.catalogo {
+    background-color: $principal;
+}
+
+.catalogo h2 {
+    color: #fff;
+}
+
+.catalogo .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.catalogo .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: .1rem 0;
+}
+
+.catalogo .owl-prev,
+.catalogo .owl-next {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    color: #fff;
+    opacity: .7;
+    transition: all .5s ease;
+}
+
+.catalogo .owl-prev:hover,
+.catalogo .owl-next:hover {
+    opacity: 1;
+}
+
+.multimedia-videos {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.multimedia-videos h3 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.multimedia-videos video {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: .6rem;
+}
+
+
+
+/** SECCION MAPA-CONTACTO **/
+
+/*.mapa-contacto {
+    background: url(../images/mapafondo-mobile.png) no-repeat center top;
+}*/
+
+.datafono-imagen {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.datafono-imagen img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.area-formulario {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0;
+    margin: 0;
+    border: 1px solid $principal;
+    border-radius: 5px 5px 5px 5px;
+    opacity: 1;
+}
+
+.area-formulario2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 100%;
+    align-items: left;
+    padding: 0;
+    margin: 0;
+}
+
+.area-formulario2 form {
+    flex: 1 0 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.area-formulario2 button {
+    width: 100%;
+}
+
+/** PIE DE PAGINA **/
+
+.footer1 {
+    background-color: $principal;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.pie1,
+.pie2,
+.pie3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0;
+}
+
+.piedepagina a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer1 .container .row img {
+    max-width: 120px;
+} 
+
+.datos-individuales {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.datos-individuales i {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0;
+    margin-right: 1rem;
+}
+
+.datos-individuales p {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.piedepagina .redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-sociales i {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.redes-sociales li a i {
+    opacity: .8;
+    transition: all 1s ease;
+}
+
+.redes-sociales li a i:hover {
+    opacity: 1;
+}
+
+.footer2 {
+    background-color: $texto;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.footer2 i {
+    font-size: 1.3rem;
+    margin-right: .5rem;
+}
+
+.flecha-arriba {
+    position: fixed;
+    bottom: 3rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $secundario;
+    text-decoration: none;
+    z-index: 99999;
+}
+
+
+
+/****************************************************************
+                    PAGINAS INTERNAS
+****************************************************************/
+
+.paginas-internas .centrodecopiado {
+    background: #fff;
+    color: $texto;
+}
+
+.paginas-internas .centrodecopiado .acordeon-nosotros {
+    background: $texto;
+    color: #fff;
+}
+
+.paginas-internas .centrodecopiado .acordeon-nosotros a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+.paginas-internas .texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.paginas-internas .texto-encabezado .display-4 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: #000;
+    text-shadow: 1px 1px 5px #818084;
+}
+
+.card-block p {
+    padding: .3rem;
+}
+
+.paginas-internas .btn-primary {
+    background-color: $principal;
+    border-color: transparent;
+    opacity: .85;
+    margin-top: 1rem;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+.paginas-internas .btn-primary:hover,
+.paginas-internas .btn-primary:focus,
+.paginas-internas .btn-primary:active:hover {
+    opacity: 1;
+}
+
+.paginas-internas .contenido {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.paginas-internas .contenedor-articulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $principal;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.paginas-internas .servicios article img {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.paginas-internas .servicios h3 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: .7rem;
+    padding-bottom: .1rem;
+    height: auto;
+}
+
+.paginas-internas .servicios h3 a::after {
+    display: none;
+}
+
+.paginas-internas .servicios p {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    align-items: flex-start
+}
+
+.paginas-internas .g-map {
+    padding-bottom: 1rem;
+}
+
+.proximamente .bienvenidos {
+    background: url(../images/redessociales.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed !important;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************
+RESPONSIVE
+**************************/
+
+//@media screen and (max-width: 544px) and (min-width: 767px) {
+//    
+//}
+//
+//@media screen and (max-width: 768px) and (min-width: 991px) {
+//    
+//}
+//
+//@media screen and (max-width: 992px) and (min-width: 1199px) {
+//    
+//}
+@media (max-width: 767px) {
+    .texto-servicios,
+    .botones-servicio,
+    #menu-principal-desktop,
+    .encabezado-desktop {
+        display: none;
+    }
+    /** SECCION SERVICIOS **/
+    .servicios article {
+        display: flex;
+        align-items: center;
+        color: $texto;
+        margin: 1rem 0;
+    }
+    .servicios img {
+        width: 60px;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    .servicios h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        flex: 1 1 auto;
+    }
+    .servicios article h3 a {
+        color: $texto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+    .servicios h3 a::after {
+        content: "\f054";
+        font-family: FontAwesome;
+        font-size: 2rem;
+        margin-left: 1rem;
+        opacity: .6;
+        position: relative;
+        left: 0;
+        transition: all .5s ease;
+    }
+    .servicios h3 a:hover::after {
+        opacity: 1;
+        left: -1rem;
+    }
+    .multimedia-videos video {
+        width: 95%;
+    }
+    .formulario-div {
+        order: 0;
+    }
+    .datafono-imagen {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .datafono-imagen img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+
+    /****************************************************************
+                    PAGINAS INTERNAS MOBILE
+****************************************************************/
+    .paginas-internas .bienvenidos {
+        background: url(../images/fondo-mobile1.jpg) no-repeat center top;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paginas-internas .granformato-bienvenidos {
+        background: url(../images/granformato-fondo.jpg) no-repeat right top;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paginas-internas .texto-encabezado .display-4 {
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-top: 5rem;
+        font-size: 2rem;
+        color: #000;
+        text-shadow: 1px 1px 5px #818084;
+    }
+
+
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    
+    
+    #menu-principal,
+    .logomobile,
+    .boton-menu {
+        display: none;
+    }
+    .encabezado {
+        padding: 0;
+        background-color: #fff;
+    }
+
+
+    .encabezado-desktop {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+        transition: all 1s ease;
+    }
+    
+    .fondo-menu3 {
+        padding-top: 0;
+        height: 100px;
+    }
+    .encabezado-menudesktop {
+        background-color: $texto;
+        color: #fff;
+        font-size: .85rem;
+        padding: .2rem;
+        height: 1.9rem;
+        transition: all 2s ease;
+    }
+    .encabezado-menudesktop i {
+        margin-left: 1.7rem;
+    }
+    .fondo-menu2 {
+        display: none;
+    }
+
+
+    .menu-desktop {
+        background-color: #fff;
+        transition: all 2.5s ease;
+    }
+    .fondo-menu5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; //        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100px;
+
+    }
+    .opcionesmenu {
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 1s ease;
+    }
+
+    .fondo-menu {
+        transform: scale(0.7);
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+    opcionesmenu .contenedor-menu {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin: auto;
+    }
+    .menu-index {
+        background-color: $principal;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-index:hover {
+        box-shadow: -11px 6px 45px $principal;
+    }
+    .menu-index a {
+        text-decoration: none;
+        color: #fff;
+        font-size: .9rem;
+        transition: all 1s ease;
+    }
+    fondo-menu4 {
+        font-size: .5rem;
+    }
+
+    .pag-active {
+        text-decoration: underline;
+    }
+    .menu-index-1,
+    .menu-index-3 {
+        border-radius: 5px 0 0 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-index-2,
+    .menu-index-4 {
+        border-radius: 0 5px 5px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-img {
+        height: auto;
+        transition: all 2s ease;
+    }
+    .menu-img img {
+        width: 100%;
+        height: 100%;
+        border: none; //        padding: 0;
+        //        margin: 0;
+        position: static;
+    }
+    .carousel-item img {
+        margin-top: 8rem;
+    width: 100%;
+    max-height: 912px;
+}
+
+    .multimedia-videos video {
+        width: 100%;
+    }
+
+    .paginas-internas .bienvenidos {
+        background: url(../images/fondo-desktop.jpg) no-repeat center top;
+        background-size: cover;
+        background-attachment: fixed !important;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .paginas-internas .granformato-bienvenidos {
+        background: url(../images/granformato-fondo.jpg) no-repeat right top;
+        background-size: cover;
+        background-attachment: fixed !important;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .paginas-internas .texto-encabezado .display-4 {
+        background-color: rgba(255, 255, 255, 0.6);
+        margin-top: 13rem;
+        font-size: 1.7rem;
+    }
+
+    .boton-quienes-somos {
+        display: flex;
+        justify-content: flex-end;
+    } //    .centrodecopiado button {
+    //        margin-left: auto;
+    //    }
+    /** SECCION SERVICIOS 768-991 **/
+    .servicios article {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .servicios h3 {
+        margin: 0 0 .5 0;
+        font-size: 1.3rem;
+        flex: 0 1 auto;
+        height: 3rem;
+    }
+    .servicios article h3 a {
+        color: $texto;
+        text-decoration: none;
+    }
+    .servicios img {
+        //        flex: 0 0 160px;
+        overflow: hidden; //        margin-right: 0;
+        margin-bottom: .5rem;
+        transition: all 1s ease;
+    }
+    .servicios article:hover img {
+        transform: rotateY(360deg);
+        transform-style: preserve-3d;
+    }
+    .botones-servicio {
+        margin-top: auto;
+        background: $texto; //                padding-bottom: 0;
+        //                margin-bottom: 0;
+    }
+    /*.mapa-contacto {
+        background: url(../images/mapafondo.png) no-repeat center;
+    }*/
+}
+
+@media (max-width: 991px) {
+    .texto-servicios1,
+    .texto-servicios2 {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 16.5px;
+    }
+
+    /*********************
+    pagina servicios
+    ********************/
+    .paginas-internas .contenedor-articulo {
+        border-radius: 100px 0px 0px 100px;
+    }
+
+
+    .paginas-internas .servicios article img {
+        width: 75%;
+        min-width: 208px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .paginas-internas h3 {
+        font-size: 1.5rem;
+    }
+
+    .paginas-internas .servicios p {
+        display: block;
+        font-size: 1.1rem;
+    }
+}
+
+.opcionesmenu {
+    max-width: 1000px;
+}
+
+.servicios h3 {
+    height: 1.5rem;
+}
+
+.servicios p {
+    font-size: .8rem;
+}
+
+.texto-servicios1 {
+    height: 10rem;
+}
+
+.texto-servicios2 {
+    height: 5.2rem;
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+    .opcionesmenu {
+        max-width: 1100px;
+    }
+    .servicios h3 {
+        height: 1.5rem;
+    }
+    .texto-servicios1 {
+        height: 8rem;
+    }
+    .texto-servicios2 {
+        height: 4.2rem;
+    }
+}
+
+/******************************************
+PAGINA GRAN FORMATO
+******************************************/
+
+.contenedor-articulo-granformato {
+    border: 2px solid $principal;
+    border-color: $principal;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondocolorprincipal {
+    color: #fff;
+    background-color: $principal;
+    height: 2rem;
+}
+
+contenedor-articulo-granformato ul li {
+    list-style: circle;
+    text-decoration: none;
+}

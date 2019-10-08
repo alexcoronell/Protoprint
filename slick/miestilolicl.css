@@ -1,0 +1,23 @@
+.lazy img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .lazy img {
+        height: auto;
+        width: 95%;
+    }
+    .slick-prev:before,
+.slick-next:before
+{
+    display: none;
+}
+}
+@media (min-width: 768px) {
+    .lazy img {
+        height: 75vh;
+        width: auto;
+    }
+}
+
